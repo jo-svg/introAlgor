@@ -3,5 +3,5 @@ Find a facotr of n
 2. for i = 1, i<=n, i++ :
     n%i = 0;
         console log i
-    n%i =1
+    n%i = 1
         return
