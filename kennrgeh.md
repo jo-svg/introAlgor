@@ -8,7 +8,10 @@ for (let i = 0; i <= random; i++) {
       opponentChoice = "scissors";
     }   
 }
-
+```
+for loop is the iteration /
+if statement is the sequencing 
+```
 for (let i = 0; i < history.length; i++) {
     if (history[i] == "win") {
       win++;
