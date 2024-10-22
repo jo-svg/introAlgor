@@ -10,7 +10,7 @@ function emptyParking (n, firstRow, secondRow){
                 output + 1
             }
             else if (i === "."){
-                return
+                return;
             }
         });
     }
