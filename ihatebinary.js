@@ -27,19 +27,28 @@ function convert(number){
 
 
 function revert(binary, space){
-    let number = []
-    for (let i = 0; i <space; i++){
-        if (binary[i] === 0){
-            return;
+    let number = 0
+    let binaryString = binary.toString();
+    for (let i = space-1; i >-1; i--){
+        if (binaryString[i] === '0'){
+            continue;
+            //dont use return because it will return the number as 0, instead use continue so it continues the function
         }
-        else if (binary.i === 1){
+        else if (binaryString[i] === "1"){
             number_thing.forEach((power)=>{
-                if (binary[i] === power.power){
-                    console.log(power.number)
+                if (space -1 -i === power.power){
+                    //if space = 4, i = 3 then power = 0
+                    //if space = 4, i = 2 then power = 1
+                    //if space = 4, i = 1 then power = 2
+                    //if space = 4, i = 0 then power = 3
+                    //you get 4 outputs, this equation: space -1 -i helps reverse the adding part
+                    number += power.number
                 }
             })
         }
     }
-    
+    console.log(number);
 }
-revert(101, 3)
+
+revert(1011,4);
+
